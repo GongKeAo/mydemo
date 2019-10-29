@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//100~999
+			function daff(n) {
+				a = parseInt(n / 100)
+				b = (parseInt(n / 10)) % 10
+				c = n % 10
+				if (a * a * a + b * b * b + c * c * c === n) {
+					console.log(n)
+				}
+			}
+			for (i = 100; i <= 999; i++) {
+				daff(i)
+			}
+			
+			//1000~9999
+			function daff2(m){
+				
+			}
+		</script>
+	</body>
+</html>

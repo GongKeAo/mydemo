@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //43题
+        //任意一个偶数都可以由两个素数相加得到
+        function isPrime(num) {
+            for (i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    return false
+                }
+            }
+            return true
+        }
+        var b = 10
+        for (var c = 1; c < b; c++) {
+            if (isPrime(c) === true && isPrime(b - c) === true) {
+                console.log(c, b - c)
+            }
+        }
+    </script>
+</body>
+
+</html>
